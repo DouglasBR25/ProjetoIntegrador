@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eueue"
+    android:orientation="vertical"
+    tools:context=".ActivityPedidos">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgVoltar"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_baseline_keyboard_arrow_left" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/mesacor" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ModelComp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textColor="@color/white"
+            android:backgroundTint="#FF0000"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:id="@+id/valuetotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24,99$"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="200dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pagamentoMaos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/pagmao" />
+
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bordapreco"
+            android:gravity="center"
+            android:text="Pagamento em mãos"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbnpagamentoCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/carto00att"/>
+        <TextView
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartão de crédito"
+            android:background="@drawable/bordapreco"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnfinalizarPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FF0000"
+            android:gravity="center"
+            android:text="Finalizar pedido"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnpedidoEntregue"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FF0000"
+            android:gravity="center"
+            android:text="Pedido entregue"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
