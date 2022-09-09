@@ -14,29 +14,27 @@
         android:theme="@style/Theme.semBarra"
         tools:targetApi="31">
         <activity
-            android:name=".PagamentosActivity"
+            android:name=".testeActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
 
         <activity
-            android:name=".MesasActivity"
+            android:name=".PagamentosActivity"
             android:exported="true">
 
 
         </activity>
+        <activity
+            android:name=".MesasActivity"
+            android:exported="true">
 
+        </activity>
         <activity
             android:name=".MenuPratoActivity"
             android:exported="true">
 
         </activity>
-
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -57,6 +55,11 @@
         <activity
             android:name=".MenuActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>

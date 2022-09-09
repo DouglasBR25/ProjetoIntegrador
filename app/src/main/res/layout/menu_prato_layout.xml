@@ -168,27 +168,9 @@
             android:orientation="horizontal"
             android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/imgCombos"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_marginRight="@+id/btnCombos"
-                android:src="@drawable/comida" />
 
-            <Button
-                android:id="@+id/btnCombos"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_margin="5dp"
-                android:backgroundTint="#C6868686"
-                android:gravity="center"
-                android:text="Combos"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck" />
+
+
 
         </LinearLayout>
 
@@ -197,10 +179,10 @@
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
+            android:layout_margin="50dp"
             android:backgroundTint="#FF2C00"
             android:gravity="center"
-            android:text="1 item R$ 14,99"
+            android:text="R$ 14,99"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />

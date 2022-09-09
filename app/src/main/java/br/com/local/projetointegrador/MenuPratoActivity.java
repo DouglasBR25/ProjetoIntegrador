@@ -21,6 +21,8 @@ public class MenuPratoActivity extends AppCompatActivity {
         setContentView(R.layout.menu_prato_layout);
         btnMais = findViewById(R.id.btnMais);
         btnMenos = findViewById(R.id.btnMenos);
+        btnAdicionarItens = findViewById(R.id.btnAdicionarItens);
+        btnItem = findViewById(R.id.btnItem);
 
         btnAdicionarItens.setOnClickListener(new View.OnClickListener() {
             @Override
