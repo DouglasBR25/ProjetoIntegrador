@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MenuPratoActivity extends AppCompatActivity {
         EditText edtQuantidadeMenuPrato;
         Button btnMenos, btnMais, btnAdicionarItens, btnItem;
+        TextView testeSoma,valorProduto;
 
 
     @Override
@@ -23,6 +25,7 @@ public class MenuPratoActivity extends AppCompatActivity {
         btnMenos = findViewById(R.id.btnMenos);
         btnAdicionarItens = findViewById(R.id.btnAdicionarItens);
         btnItem = findViewById(R.id.btnItem);
+
 
         btnAdicionarItens.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +51,16 @@ public class MenuPratoActivity extends AppCompatActivity {
                 edtQuantidadeMenuPrato.setText(String.valueOf(quantid + 1));
             }
         });
+        btnMais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                double valor= 0,soma = 0;
+
+                valor = Double.valueOf(valorProduto.getText().toString());
+                soma = soma + valor;
+                btnItem.setText(Double.valueOf(soma).toString());
+            }
+        });
         btnMenos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,5 +70,18 @@ public class MenuPratoActivity extends AppCompatActivity {
                 edtQuantidadeMenuPrato.setText(String.valueOf(quantid - 1));
             }}
         });
+
+        testeSoma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edtQuantidadeMenuPrato = findViewById(R.id.edtQuantidadeMenuPrato);
+                Integer quantid = Integer.parseInt(String.valueOf(edtQuantidadeMenuPrato.getText()));
+                if(quantid > 0){
+                    edtQuantidadeMenuPrato.setText(String.valueOf(quantid - 1));
+                }}
+        });
+
+
+
     }
 }

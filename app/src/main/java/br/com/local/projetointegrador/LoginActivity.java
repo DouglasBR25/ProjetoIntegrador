@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 //Validar a entrada do usuário
 
-                if (usuario.equals("Senac") && senha.equals("Senac")) {
+                if (usuario.equals("senac") && senha.equals("senac")) {
                     //Abrindo outra janela
                     //Duas formas de abrir uma janela
                     //no allqr.class que troca

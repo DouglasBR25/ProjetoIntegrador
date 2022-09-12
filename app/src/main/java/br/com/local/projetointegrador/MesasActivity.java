@@ -19,7 +19,7 @@ public class MesasActivity extends AppCompatActivity {
     String[] mesaSelec;
     ImageView IconHouseMenu;
     String txtNumMesa[] ={
-            "Mesa 1", "Mesa 2", "Mesa 3", "Mesa 4", "Mesa 5", "Mesa 6", "Mesa 7", "Mesa 8",
+            "1", "2", "3", "4", "5", "6", "7", "8"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +44,8 @@ public class MesasActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(),MenuActivity.class);
                 //Passando valores de uma janela para outra
-                mesaSelec = txtNumMesa[i].split(" ");
-                intent.putExtra("sendMesa", mesaSelec[1]);
+                //mesaSelec = txtNumMesa[i].split(" ");
+                intent.putExtra("sendMesa", mesaSelec[i]);
                 //Toast.makeText(MesasActivity.this, mesaSelec[1], Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }

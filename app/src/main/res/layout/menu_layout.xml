@@ -32,7 +32,8 @@
             android:hint="Pesquisar"
             android:textColorHint="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/ImgPesquisaCardapio"

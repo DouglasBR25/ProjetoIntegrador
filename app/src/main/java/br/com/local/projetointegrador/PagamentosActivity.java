@@ -29,6 +29,7 @@ public class PagamentosActivity extends AppCompatActivity {
     RadioButton rdb1, rdb2;
     Button btnfinalizarPedido;
 
+
     int imgLanches[] = {
             R.drawable.pizzateste};
 

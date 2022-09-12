@@ -21,9 +21,10 @@ public class MenuActivity extends AppCompatActivity {
     ImageView IconSettingsMenu;
     ImageView IconMesasMenu;
     ShapeableImageView ImgModelCardapio;
-    TextView txtModelCardapio, txtModelValorCardapio;
-
-
+    TextView txtModelCardapio;
+    Button txtModelValorCardapio;
+    String nMesa;
+    Intent intent;
 
 
 
@@ -44,11 +45,15 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
 
+        Intent intent = getIntent();
+
+        txtModelCardapio = findViewById(R.id.txtModelCardapio);
         IconSettingsMenu = findViewById(R.id.IconSettingsMenu);
         IconMesasMenu = findViewById(R.id.IconMesasMenu);
         gridView = findViewById(R.id.GriedViewMenu);
-
-
+        String nome =  intent.getStringExtra("sendMesa");
+        System.out.println(nome);
+        txtModelCardapio.setText("hahaha");
         AdaptadorCard adapter = new AdaptadorCard();
 
         gridView.setAdapter(adapter);
