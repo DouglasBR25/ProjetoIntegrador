@@ -42,12 +42,12 @@ public class MesasActivity extends AppCompatActivity {
         gridViewMesas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(),MenuActivity.class);
+                //Intent intent = new Intent(getApplicationContext(),MenuActivity.class);
                 //Passando valores de uma janela para outra
                 //mesaSelec = txtNumMesa[i].split(" ");
-                intent.putExtra("sendMesa", mesaSelec[i]);
-                //Toast.makeText(MesasActivity.this, mesaSelec[1], Toast.LENGTH_SHORT).show();
-                startActivity(intent);
+                //intent.putExtra("sendMesa", mesaSelec[i]);
+                Toast.makeText(MesasActivity.this, mesaSelec[i], Toast.LENGTH_SHORT).show();
+                //startActivity(intent);
             }
         });
     }

@@ -283,6 +283,8 @@
                 android:layout_height="20dp"
                 android:layout_marginLeft="210dp"
                 android:src="@drawable/ic_baseline_arrow_forward_ios" />
+
+
         </LinearLayout>
 
 

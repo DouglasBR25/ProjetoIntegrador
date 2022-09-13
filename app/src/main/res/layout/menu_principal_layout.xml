@@ -62,40 +62,6 @@
             android:layout_gravity="right"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnDiminuirQuantidade"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center"
-                android:layout_marginRight="3dp"
-                android:backgroundTint="#FF2C00"
-                android:text="-"
-                android:textColor="@color/white"
-                android:textSize="18dp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/edtQuantidade"
-                android:layout_width="56dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:background="#fff"
-                android:backgroundTint="@color/black"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="@color/white" />
-
-            <Button
-                android:id="@+id/btnAumentarQuantidade"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="3dp"
-                android:backgroundTint="#307333"
-                android:text="+"
-                android:textColor="@color/white"
-                android:textSize="18dp"
-                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -175,7 +141,8 @@
                 android:text="-"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/edtQuantidade1"
@@ -185,8 +152,9 @@
                 android:background="#fff"
                 android:backgroundTint="@color/black"
                 android:gravity="center"
-                android:text="3"
-                android:textColor="@color/white" />
+                android:text="1"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
             <Button
                 android:id="@+id/btnAumentarQuantidade1"
@@ -198,7 +166,8 @@
                 android:text="+"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -254,7 +223,8 @@
                 android:text="-"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/edtQuantidade2"
@@ -264,8 +234,9 @@
                 android:background="#fff"
                 android:backgroundTint="@color/black"
                 android:gravity="center"
-                android:text="3"
-                android:textColor="@color/white" />
+                android:text="1"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
             <Button
                 android:id="@+id/btnAumentarQuantidade2"
@@ -277,7 +248,8 @@
                 android:text="+"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -335,7 +307,8 @@
                 android:text="-"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/edtQuantidade3"
@@ -345,8 +318,9 @@
                 android:background="#fff"
                 android:backgroundTint="@color/black"
                 android:gravity="center"
-                android:text="3"
-                android:textColor="@color/white" />
+                android:text="1"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/btnAumentarQuantidade3"
@@ -358,7 +332,8 @@
                 android:text="+"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -373,11 +348,12 @@
 
         <Button
             android:id="@+id/btnConfirmar"
-            android:layout_width="150dp"
-            android:layout_height="70dp"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
             android:layout_margin="5dp"
-            android:backgroundTint="#A6000000"
-            android:text="Confirmar"
+            android:backgroundTint="#FF2C00"
+            android:text="R$ 40,00"
+            android:textSize="20dp"
             android:textColor="@color/white" />
 
     </LinearLayout>

@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
-                android:text="40,00"
+                android:text="R$ 40,00"
                 android:shadowColor="#FFC107"
                 android:shadowRadius="2"
                 android:textColor="#4CAF50"
@@ -162,7 +162,7 @@
             android:layout_margin="50dp"
             android:backgroundTint="#FF2C00"
             android:gravity="center"
-            android:text="2"
+            android:text="R$ 40,00"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />

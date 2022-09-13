@@ -53,7 +53,6 @@ public class MenuActivity extends AppCompatActivity {
         gridView = findViewById(R.id.GriedViewMenu);
         String nome =  intent.getStringExtra("sendMesa");
         System.out.println(nome);
-        txtModelCardapio.setText("hahaha");
         AdaptadorCard adapter = new AdaptadorCard();
 
         gridView.setAdapter(adapter);

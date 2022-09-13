@@ -2,6 +2,7 @@ package br.com.local.projetointegrador;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -56,11 +57,18 @@ public class PagamentosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.pagamentos_layout);
-
+        btnfinalizarPedido = findViewById(R.id.btnfinalizarPedido);
         ModelComp = findViewById(R.id.ModelComp);
         ValueTotal = findViewById(R.id.valuetotal);
         preco = findViewById(R.id.preco10);
         valortotal = findViewById(R.id.valuetotal);
+        btnfinalizarPedido.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PagamentosActivity.this,MenuActivity.class));
+                finish();
+            }
+        });
 
 
         AdaptadorRecr adapter = new AdaptadorRecr();
@@ -70,6 +78,8 @@ public class PagamentosActivity extends AppCompatActivity {
 
 
     }
+
+
 
 
     public class AdaptadorRecr extends BaseAdapter {
