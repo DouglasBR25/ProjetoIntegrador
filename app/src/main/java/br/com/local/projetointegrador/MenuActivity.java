@@ -20,11 +20,8 @@ public class MenuActivity extends AppCompatActivity {
     GridView gridView;
     ImageView IconSettingsMenu;
     ImageView IconMesasMenu;
-    ShapeableImageView ImgModelCardapio;
     TextView txtModelCardapio;
-    Button txtModelValorCardapio;
-    String nMesa;
-    Intent intent;
+    Button BotaoFinalizarPedidoMenu;
 
 
 
@@ -47,6 +44,7 @@ public class MenuActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
+        BotaoFinalizarPedidoMenu = findViewById(R.id.BotaoFinalizarPedidoMenu);
         txtModelCardapio = findViewById(R.id.txtModelCardapio);
         IconSettingsMenu = findViewById(R.id.IconSettingsMenu);
         IconMesasMenu = findViewById(R.id.IconMesasMenu);
@@ -56,6 +54,13 @@ public class MenuActivity extends AppCompatActivity {
         AdaptadorCard adapter = new AdaptadorCard();
 
         gridView.setAdapter(adapter);
+
+        BotaoFinalizarPedidoMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), PagamentosActivity.class));
+            }
+        });
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -80,6 +85,8 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+
+
     public class AdaptadorCard extends BaseAdapter {
         @Override
         public int getCount() {
@@ -95,6 +102,8 @@ public class MenuActivity extends AppCompatActivity {
         public long getItemId(int i) {
             return 0;
         }
+
+
 
         @Override
         public View getView(int i, View v, ViewGroup viewGroup) {
